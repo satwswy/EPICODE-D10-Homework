@@ -1,38 +1,48 @@
-/* EXERCISE A
+// EXERCISE A
 
-Create a variable called test and assign a string value to it.
+//Create a variable called test and assign a string value to it.
 
-*/
+let test = "This is a string value"
 
-/* EXERCISE B
+//EXERCISE B
 
-Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
+//Create a variable called sum and assign to it the result of the sum between the numbers 10 and 20.
 
-*/
+let sum = 10+20
+//console.log(sum)
 
-/* EXERCISE C
+// EXERCISE C
 
-Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
+//Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 
-*/
+let random = Math.floor(Math.random(0) * 20);
+//console.log(random)
 
-/* EXERCISE D
+ //EXERCISE D
 
-Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
+//Create a variable called me and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 
-*/
+let me = 
+{
+    name: 'myname',
+    surname: 'mysurname',
+    age: 30
+}
+//console.log(me)
 
-/* EXERCISE E
+//EXERCISE E
 
-Write a piece of code for programmatically removing the age property from the previously create object.
+//Write a piece of code for programmatically removing the age property from the previously create object.
 
-*/
+delete me.name
+//console.log(me)
 
-/* EXERCISE F
+// EXERCISE F
 
-Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
+//Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 
-*/
+me.skills = ['html' , 'css' , 'javascript']
+//console.log(me)
 
 /* EXERCISE G
 
