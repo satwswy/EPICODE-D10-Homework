@@ -120,7 +120,7 @@ function onlyLetters (noNumbers){
     let removeTheNumbers = noNumbers.replace(/[0-9]/g, '');
     return removeTheNumbers
     }
-    console.log(onlyLetters('this is a 500 text'))
+    //console.log(onlyLetters('this is a 500 text'))
 // EXERCISE 6
 
 //Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
@@ -131,11 +131,31 @@ function isThisAnEmail(text){
 }
 //console.log(isThisAnEmail("this is not an email"))
 
-/* EXERCISE 7
+// EXERCISE 7
 
-Write a function called whatDayIsIt that should return the current day of the week.
+//Write a function called whatDayIsIt that should return the current day of the week.
 
-*/
+function whatDayIsIt(){
+   
+    let currentDate = new Date ("May 6, 2022 15:05:00");
+    let currentDay = currentDate.getDay()
+    
+    if (currentDate.getDay()===0)      {return   "The Current Day of The Week is Sunday"}
+    
+    else if (currentDate.getDay()===1) {return  "The Current Day of The Week is Monday"}
+
+    else if (currentDate.getDay()===2) {return  "The Current Day of The Week is Tuesday"}
+
+    else if (currentDate.getDay()===3) {return  "The Current Day of The Week is Wednesday"}
+
+    else if (currentDate.getDay()===4) {return  "The Current Day of The Week is Thursday"}
+
+    else if (currentDate.getDay()===5) {return  "The Current Day of The Week is Friday"}
+
+    else if (currentDate.getDay()===6) {return  "The Current Day of The Week is Saturday"}
+    
+}
+console.log(whatDayIsIt());
 
 /* EXERCISE 8
 
