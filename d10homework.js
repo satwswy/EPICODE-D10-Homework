@@ -119,13 +119,17 @@ function deleteOne (paraBoolean , paraString){
 function onlyLetters (noNumbers){
     let removeTheNumbers = noNumbers.replace(/[0-9]/g, '');
     return removeTheNumbers
+    }
+    console.log(onlyLetters('this is a 500 text'))
+// EXERCISE 6
+
+//Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
+
+function isThisAnEmail(text){
+    let isEmail = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    return isEmail.test(text);
 }
-console.log(onlyLetters('this is a 500 text'))
-/* EXERCISE 6
-
-Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
-
-*/
+//console.log(isThisAnEmail("this is not an email"))
 
 /* EXERCISE 7
 
