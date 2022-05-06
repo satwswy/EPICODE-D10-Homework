@@ -95,21 +95,27 @@ function splitMe(string) {
 }
 splitMe("This is a text")
 
-/* EXERCISE 4
+// EXERCISE 4
 
-Write a function called deleteOne which receives a string and a boolean as parameters.
+//Write a function called deleteOne which receives a string and a boolean as parameters.
 
-If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
+//If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 
-*/
+function deleteOne (paraBoolean , paraString){
+    if (paraBoolean === true)
+    {return paraString.slice(1,paraString.length)}
 
-/* EXERCISE 5
+    
+    else if (paraBoolean === false) {return paraString.slice(0,paraString.length-1)}
+    
+}
+console.log(deleteOne(true , "this is a text"))
 
-Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
+// EXERCISE 5
 
-Ex.: onlyLetters("I have 4 dogs") => returns "I have dogs"
+// Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
 
-*/
+// Ex.: onlyLetters("I have 4 dogs") => returns "I have dogs"
 
 /* EXERCISE 6
 
