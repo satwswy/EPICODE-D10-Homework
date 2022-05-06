@@ -80,15 +80,20 @@ function whoIsBigger(number1 , number2) {
     else if (number1 === number2) 
     {return number1}
 }
-console.log("the bigger number is" ,(whoIsBigger(5,6)))
+//console.log("the bigger number is" ,(whoIsBigger(5,6)))
 
-/* EXERCISE 3
+// EXERCISE 3
 
-Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
+//Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
 
-Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
+//Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
+let splitWords
 
-*/
+function splitMe(string) {
+    splitWords = string.split(" ")
+    //console.log(splitWords)
+}
+splitMe("This is a text")
 
 /* EXERCISE 4
 
