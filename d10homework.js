@@ -58,21 +58,29 @@ me.skills.pop()
 //Write a function called dice; it should randomize an integer number between 1 and 6.
 let randomNumber = Math.floor((Math.random(1) * 6)+1);
 
-function dice(num) {
-    if (num === "give-me-a-random-number")
-    {num = randomNumber 
-    //console.log(randomNumber)}
+//function dice(num) {
+  //  if (num === "give-me-a-random-number")
+    //{num = randomNumber 
+   // console.log(randomNumber)}
     
-     else   //{console.log("Please type give-me-a-random-number inside the parameter")
-    }
-    }
-dice("give-me-a-random-number")
+    // else   {console.log("Please type give-me-a-random-number inside the parameter")
+    //}
+    //}
 
-/* EXERCISE 2
 
-Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
+// EXERCISE 2
 
-*/
+// Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
+
+function whoIsBigger(number1 , number2) {
+    if (number1 > number2)
+    { return number1}
+    else if (number1<number2)
+    {return number2}
+    else if (number1 === number2) 
+    {return number1}
+}
+console.log("the bigger number is" ,(whoIsBigger(5,6)))
 
 /* EXERCISE 3
 
@@ -259,6 +267,7 @@ Commit and push the code to your personal GitHub repository; then post the link 
 */
 
 /* This movies array is used throughout the exercises. You’re not supposed to alter it. */
+
 
 const movies = [
 
@@ -487,3 +496,4 @@ const movies = [
     },
 
     ];
+    
