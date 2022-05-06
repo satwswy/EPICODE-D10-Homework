@@ -44,11 +44,12 @@ delete me.name
 me.skills = ['html' , 'css' , 'javascript']
 //console.log(me)
 
-/* EXERCISE G
+// EXERCISE G
 
-Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
+//Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 
-*/
+me.skills.pop()
+//console.log(me)
 
 // JS Functions
 
