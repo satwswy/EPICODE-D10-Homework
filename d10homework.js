@@ -53,11 +53,20 @@ me.skills.pop()
 
 // JS Functions
 
-/* EXERCISE 1
+// EXERCISE 1
 
-Write a function called dice; it should randomize an integer number between 1 and 6.
+//Write a function called dice; it should randomize an integer number between 1 and 6.
+let randomNumber = Math.floor((Math.random(1) * 6)+1);
 
-*/
+function dice(num) {
+    if (num === "give-me-a-random-number")
+    {num = randomNumber 
+    //console.log(randomNumber)}
+    
+     else   //{console.log("Please type give-me-a-random-number inside the parameter")
+    }
+    }
+dice("give-me-a-random-number")
 
 /* EXERCISE 2
 
