@@ -155,7 +155,7 @@ function whatDayIsIt(){
     else if (currentDate.getDay()===6) {return  "The Current Day of The Week is Saturday"}
     
 }
-console.log(whatDayIsIt());
+//console.log(whatDayIsIt());
 
 /* EXERCISE 8
 
@@ -177,12 +177,23 @@ values: [3, 3, 4]
 
 */
 
-/* EXERCISE 9
+// EXERCISE 9
 
-Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
+//Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 
-*/
+function howManyDays(date) {
+    let todaysDate = Date.now()
+    console.log(todaysDate)
+    let givenDate = new Date(date) //December 17, 1995
+    let givenDateMS = Date.parse(givenDate)
+    console.log(givenDateMS)
+    let differenceInDates = todaysDate - givenDateMS
 
+    let result = (differenceInDates / (1000 * 60 * 60 * 24))
+    console.log(result)
+    return result
+}
+   (howManyDays("March 5, 2021"))
 /* EXERCISE 10
 
 Write a function called isTodayMyBirthday which should return true if today’s your birthday, false otherwise.
