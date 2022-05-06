@@ -109,14 +109,18 @@ function deleteOne (paraBoolean , paraString){
     else if (paraBoolean === false) {return paraString.slice(0,paraString.length-1)}
     
 }
-console.log(deleteOne(true , "this is a text"))
+//console.log(deleteOne(true , "this is a text"))
 
 // EXERCISE 5
 
 // Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
 
 // Ex.: onlyLetters("I have 4 dogs") => returns "I have dogs"
-
+function onlyLetters (noNumbers){
+    let removeTheNumbers = noNumbers.replace(/[0-9]/g, '');
+    return removeTheNumbers
+}
+console.log(onlyLetters('this is a 500 text'))
 /* EXERCISE 6
 
 Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
